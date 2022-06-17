@@ -25,12 +25,12 @@ variable "repository_name" {
 
 variable "static_web_bucket_name" {
   description = "S3 Bucket to deploy to"
-  default     = "basma-mvp-bucket"
+  default     = "phx-fd-terraform-bucket"
 }
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "basma-web-artifacts"
+  default     = "phx-fd-terraform-artifacts"
 }
 
 variable "github_token" {

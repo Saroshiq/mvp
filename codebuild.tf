@@ -8,7 +8,7 @@ data "template_file" "buildspec" {
 resource "aws_codebuild_project" "static_web_build" {
   badge_enabled  = false
   build_timeout  = 60
-  name           = "basma-web-build"
+  name           = "phx-fd-terraform-build"
   queued_timeout = 480
   service_role   = aws_iam_role.static_build_role.arn
   tags = {
@@ -17,7 +17,7 @@ resource "aws_codebuild_project" "static_web_build" {
 
   artifacts {
     encryption_disabled    = false
-    name                   = "basma-web-build-${var.env}"
+    name                   = "phx-fd-terraform-build-${var.env}"
     override_artifact_name = false
     packaging              = "NONE"
     type                   = "CODEPIPELINE"

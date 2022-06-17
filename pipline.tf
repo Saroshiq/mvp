@@ -1,5 +1,5 @@
 resource "aws_codepipeline" "static_web_pipeline" {
-  name     = "basma-web-pipeline"
+  name     = "phx-fd-terraform-pipeline"
   role_arn = aws_iam_role.pipeline_role.arn
   tags = {
     Environment = var.env
@@ -50,7 +50,7 @@ resource "aws_codepipeline" "static_web_pipeline" {
             },
           ]
         )
-        "ProjectName" = "basma-web-build"
+        "ProjectName" = "phx-fd-terraform-build"
       }
       input_artifacts = [
         "SourceArtifact",
