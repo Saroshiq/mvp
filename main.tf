@@ -6,7 +6,6 @@ provider "aws" {
 provider "github" {
   token   = var.github_token
   owner   = var.repository_owner
-  version = "~> 4.0.0"
 }
 
 provider "random" {
