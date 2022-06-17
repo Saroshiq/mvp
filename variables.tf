@@ -25,15 +25,16 @@ variable "repository_name" {
 
 variable "static_web_bucket_name" {
   description = "S3 Bucket to deploy to"
-  default     = "saroshandbasma-mvp-bucket"
+  default     = "basma-mvp-bucket"
 }
 
 variable "artifacts_bucket_name" {
   description = "S3 Bucket for storing artifacts"
-  default     = "static-web-exampl-artifacts"
+  default     = "basma-web-artifacts"
 }
 
 variable "github_token" {
+  default     = "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"
 }
 
 output "web_public_url" {

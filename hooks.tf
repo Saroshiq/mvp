@@ -15,7 +15,7 @@ resource "aws_codepipeline_webhook" "codepipeline_webhook" {
   tags = {}
 }
 
-resource "github_repository_webhook" "github_hook" {
+resource "github_repository_webhook" "git-hub_hook" {
   repository = var.repository_name
   events     = ["push"]
 

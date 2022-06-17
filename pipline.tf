@@ -50,7 +50,7 @@ resource "aws_codepipeline" "static_web_pipeline" {
             },
           ]
         )
-        "ProjectName" = "static-web-build"
+        "ProjectName" = "basma-web-build"
       }
       input_artifacts = [
         "SourceArtifact",
