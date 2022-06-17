@@ -1,5 +1,5 @@
 resource "aws_codepipeline" "static_web_pipeline" {
-  name     = "static-web-pipeline"
+  name     = "basma-web-pipeline"
   role_arn = aws_iam_role.pipeline_role.arn
   tags = {
     Environment = var.env
